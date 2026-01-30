@@ -1,3 +1,6 @@
+references:
+  - "https://en.wikipedia.org/wiki/Toyota_86"
+
 generations:
   - name: "First Generation"
     start_year: 2013

@@ -301,7 +301,7 @@
   "signals": [
     {"id": "FRS_STEER_ANGLE", "path": "Control", "fmt": { "len": 16, "max": 32767, "min": -32767, "sign": true, "unit": "degrees" }, "name": "Steering wheel angle"}
   ]},
-{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"21": "01"}, "freq": 5,
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"21": "01"}, "freq": 5, "dbgfilter": { "to": 2013, "from": 2015 },
   "signals": [
     {"id": "FRS_EOT", "path": "Engine", "fmt": {"bix": 224, "len": 8, "max": 215, "add": -40, "unit": "celsius" }, "name": "Engine oil temperature", "suggestedMetric": "engineOilTemperature"}
   ]},
@@ -317,23 +317,23 @@
   "signals": [
     {"id": "FRS_TRIP_CNT", "path": "Engine", "fmt": { "len": 16, "max": 65535, "unit": "scalar" }, "name": "Trip counter"}
   ]},
-{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "10A3"}, "freq": 1,
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "10A3"}, "freq": 1, "dbgfilter": { "to": 2013, "from": 2015 },
   "signals": [
     {"id": "FRS_FUEL_INJ_1_WIDTH", "path": "Fuel", "fmt": { "len": 8, "max": 65.28, "mul": 32, "div": 125, "unit": "milliseconds" }, "name": "Fuel injection 1 pulse width"}
   ]},
-{ "hdr": "7E0", "rax": "7E8", "tmo": "64", "fcm1": true, "dbg": true, "cmd": {"22": "10E5"}, "freq": 30,
+{ "hdr": "7E0", "rax": "7E8", "tmo": "64", "fcm1": true, "cmd": {"22": "10E5"}, "freq": 30, "dbgfilter": { "to": 2013, "from": 2015 },
   "signals": [
     {"id": "FRS_ODO", "path": "Trips", "fmt": { "len": 16, "max": 131070, "mul": 2, "nullmax": 131070, "unit": "kilometers" }, "name": "Odometer", "suggestedMetric": "odometer"}
   ]},
-{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "10E7"}, "freq": 5,
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "10E7"}, "freq": 5, "dbgfilter": { "to": 2013, "from": 2015 },
   "signals": [
     {"id": "FRS_EOT_V2", "path": "Engine", "fmt": { "len": 8, "max": 215, "min": -40, "add": -40, "unit": "celsius" }, "name": "Engine oil temperature", "suggestedMetric": "engineOilTemperature"}
   ]},
-{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "10EC"}, "freq": 1,
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "10EC"}, "freq": 1, "dbgfilter": { "to": 2013, "from": 2015 },
   "signals": [
     {"id": "FRS_EXH_VVT_RETARD_ANG", "path": "Engine", "fmt": { "len": 8, "max": 205, "min": -50, "add": -50, "unit": "degrees" }, "name": "Exhaust VVT retard angle right"}
   ]},
-{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "10ED"}, "freq": 1,
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "10ED"}, "freq": 1, "dbgfilter": { "to": 2013, "from": 2015 },
   "signals": [
     {"id": "FRS_EXH_VVT_RETARD_ANG_LEFT", "path": "Engine", "fmt": { "len": 8, "max": 205, "min": -50, "add": -50, "unit": "degrees" }, "name": "Exhaust VVT retard angle left"}
   ]},

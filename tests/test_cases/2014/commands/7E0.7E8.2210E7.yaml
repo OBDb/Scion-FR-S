@@ -4,5 +4,5 @@ test_cases:
     FRS_EOT_V2: 76
   response: 7E8046210E774
 - expected_values:
-    FRS_EOT_V2: 98
-  response: 7E8046210E78A
+    FRS_EOT_V2: 101
+  response: 7E8046210E78D
